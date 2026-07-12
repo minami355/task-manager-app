@@ -26,7 +26,7 @@ class CategoryRequest extends FormRequest
             'name' => [
                 'required',
                 'string',
-                'max:225',
+                'max:255',
                 Rule::unique('categorise', 'name')->ignore($this->category),
             ],
         ];
